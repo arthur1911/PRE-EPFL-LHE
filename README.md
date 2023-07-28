@@ -2,8 +2,9 @@
 
 ## Description
 
-This code is to model and predict the behaviour of braided rivers. 
-It takes as an input a serie of black and white pictures of an experiment representing braided rivers. After the whole process, it would be able to generate synthetic time series that have the same statistical behaviour as the experiment.
+In this script, we put forward a Bayesian approach for fine-tuning input parameters of stochastic models applied to morphodynamic systems. This process leverages time series image data derived from fieldwork, as well as from numerical and laboratory experiments. The approach involves the creation of artificial time series of images using the stochastic model, and the rejection of those series which do not match key morphodynamic statistics of the data sets available. The fine-tuned stochastic model enables us to measure both the spatial and temporal uncertainties related to the progression of the morphodynamic systems under study.
+
+We used in Python the packages `ImageQuilting.jl` and `Geostats.jl` that were developped by Julio Hoffimann. 
 
 ## Installation
 
@@ -48,6 +49,4 @@ Here is the right order of the notebooks :
 
 ## References
 
-This code is largely inspired by Julio Hoffimann's 2019 [paper](https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2019JF005245). 
-
-It has been mostly completed by Céline Scheidt's [work](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2016JF003922#).
+This script tries to replicate Julio Hoffimann's 2019 [paper](https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2019JF005245). We also include some extra tests and visualization. Hoffimann's work took inspiration from Céline Scheidt's [article](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2016JF003922#). 
